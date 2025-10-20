@@ -1,2 +1,17 @@
-# XML_TEI_exam_1
-This repo contains a .txt transcription of letters written by Antonin Artaud, an XML + DTD file, and a ReadMe file.
+# XML encoding of three letters sent by Antonin Artaud to Jean Paulhan
+
+## I. The sources
+
+Antonin Artaud (1896-1948) is a prolific yet peculiar author from the first half of the 20th century. His gravitation towards dadaism, surrealism, antifascism, and some of it’s time most celebrated movements made him a very famous figure of french litterature. His intimacy with some of the most influencial characters of french litterature, gives his correspondences a widely admitted preeminent place on this era’s intellectual history sources. This extract of his correspondence with Jean Paulhan, an important figure of the avant-garde edition, head of the N. R. F. and intimate of Gaston Gallimard, shows a significant testimony of the relation between the author and his editor. It also shows a spontaneous expression of Artaud, talking about the great themes of his philosophy. 
+
+## II. Why these sources ?
+
+As Antonin Artaud always cultivated some closeness to a lot of revered intellectual figures, and as he is an avid litterature thinker, he’s personnal writings can show us an image of his cultural references and the intertextuality he stands in. His letters show him as a savant, interested in the new humanities of his time, ethnology, sociology, political sciences, and XML can highlight and describe some of these contexts, or semantic elements. 
+
+## III. The encoding
+
+In this DTD structure, you will therefore notice an important place given to name, books, events, movement, etc., references, here to connect our source to outside materials. In an universitary posture, some of these references can be connected to external indexes such as IdRef or the BnF catalog. 
+
+## IV. AI usage.
+
+As my letters were taken from a book, i tried to use AI to transcript automatically pictures of the pages. As the result was criticaly defective, with the AI inventing most of the parts, I prefered to use a traditional OCER transcript software and correct the result by myself. I did not used AI in any another way during my work.
