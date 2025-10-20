@@ -10,7 +10,7 @@ As Antonin Artaud always cultivated some closeness to a lot of revered intellect
 
 ## III. The encoding
 
-In this DTD structure, you will therefore notice an important place given to name, books, events, movement, etc., references, here to connect our source to outside materials. In an universitary posture, some of these references can be connected to external indexes such as IdRef or the BnF catalog. 
+In this DTD structure, you will therefore notice an important place given to names, books, events, movements, etc., references, here to connect our source to outside materials. In an universitary posture, some of these references can be connected to external indexes such as IdRef or the BnF catalog. 
 
 ## IV. AI usage.
 
