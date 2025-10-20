@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT letter (meta, sourceDesc, title?, body, salutations?)>
+<!ATTLIST letter idLetter CDATA #REQUIRED>
+
+<!-- meta = encoding description -->
+<!ELEMENT meta ( docTitle, encoderName, date, misc*, availability, licence?)> 
+<!ELEMENT docTitle (#PCDATA)>
+<!ELEMENT encoderName (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT misc (#PCDATA)>
+<!ELEMENT availability (#PCDATA)>
+<!ELEMENT licence (#PCDATA)>
+
+<!-- sourceDesc = source description -->
+<!ELEMENT sourceDesc (date, place?, from, to, edition)> 
+<!ELEMENT place (#PCDATA)>
+<!ELEMENT from EMPTY>
+<!ATTLIST from name CDATA #REQUIRED>
+<!ATTLIST from dates CDATA #REQUIRED>
+<!ATTLIST from idRef CDATA #REQUIRED>
+<!ELEMENT to EMPTY>
+<!ATTLIST to name CDATA #REQUIRED>
+<!ATTLIST to dates CDATA #REQUIRED>
+<!ATTLIST to idRef CDATA #REQUIRED> <!-- URL from the french idRef authority notice database -->
+<!ELEMENT edition EMPTY>
+<!ATTLIST edition editionTitle CDATA #REQUIRED>
+<!ATTLIST edition publisher CDATA #REQUIRED>
+<!ATTLIST edition collection CDATA #IMPLIED>
+<!ATTLIST edition date CDATA #REQUIRED>
+<!ATTLIST edition ISBN CDATA #REQUIRED>
+
+<!-- body = text encoding  -->
+<!ELEMENT title (#PCDATA | date | name | book | artMovement | event | citation )*>
+<!-- The following elements are used to highlight and describe intellectual references that the authors are using -->
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name dates CDATA #REQUIRED>
+<!ATTLIST name idRef CDATA #REQUIRED>
+<!ELEMENT book (#PCDATA)>
+<!ATTLIST book name CDATA #REQUIRED>
+<!ATTLIST book author CDATA #REQUIRED>
+<!ATTLIST book authorDates CDATA #REQUIRED>
+<!ATTLIST book authorIdRef CDATA #REQUIRED>
+<!ATTLIST book date CDATA #REQUIRED>
+<!ATTLIST book editionInfo CDATA #IMPLIED>
+<!ATTLIST book bnfNotice CDATA #IMPLIED>
+<!ELEMENT artMovement (#PCDATA)>
+<!ELEMENT event (#PCDATA)>
+<!ELEMENT citation (#PCDATA)>
+<!ATTLIST citation name CDATA #IMPLIED>
+<!ATTLIST citation writing CDATA #IMPLIED>
+<!ATTLIST citation misc CDATA #IMPLIED>
+<!ELEMENT body (introduction?, paragraph+, P.S.+)>
+<!ELEMENT introduction (#PCDATA)>
+<!ELEMENT paragraph (#PCDATA | date | name | artMovement | event | book | lignReturn | verse | workExtracts )*>
+<!-- The following elements are used to describe the graphic particularities that can be seen in the letters -->
+<!ELEMENT lignReturn EMPTY>
+<!ELEMENT verse (#PCDATA)>
+<!-- The following element is used to highlight the extracts of writting Artaud is sharing to Paulhan -->
+<!ELEMENT workExtracts (#PCDATA)>
+<!ELEMENT P.S. (#PCDATA)>
+
+<!ELEMENT salutations (#PCDATA)>

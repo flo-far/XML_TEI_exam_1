@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE letter SYSTEM "xml_1st_exam.dtd">
+    <letter idLetter="">
+        <meta>
+            <docTitle></docTitle>
+            <encoderName></encoderName>
+            <date></date>
+            <availability></availability>
+        </meta>
+        <sourceDesc>
+            <date></date>
+            <from name="" dates="" idRef=""/>
+            <to name="" dates="" idRef=""/>
+            <edition editionTitle="" publisher="" date="" ISBN=""/>
+        </sourceDesc>
+        <body>
+            <paragraph></paragraph>
+            <P.S.></P.S.>
+        </body>
+    </letter>
